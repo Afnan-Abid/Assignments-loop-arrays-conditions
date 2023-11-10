@@ -464,8 +464,6 @@ for (let i = 0; i < A.length; i++) {
 }*/
 
 
-
-
 /* Qustion 5 
 
 let data = document.querySelector(".container4")
@@ -572,10 +570,6 @@ for (var i = 0; i < students.length; i++) {
   data.innerHTML += students[i] + ": " + scores[i] + "<br>";
 }*/
 
-
-
-
-
 /*Question 15 
 
 let data = document.querySelector(".container15");
@@ -615,16 +609,71 @@ for (let i = 1; i <= 7; i += 2) {
 }
 console.log("The product of odd integers from 1 to 7 is: " + product);*/
 
+/* Question 19 
 
 
+let string = "";
+let userInput = +prompt("Enter number");
+
+for (let i = 0; i <= userInput; i++) {
+    string = string + "*";
+
+    if (i === userInput) {
+        console.log(string.length - 1);
+
+        for (let j = 0; j < userInput; j++) {
+            console.log(string.slice (0 , string.length-j));
+        }
+    }
+}*/
 
 
+/* Question 20 
+
+//A//
+
+for (let k = 0; k < 5; k++) {
+    let userInput = +prompt("Enter number for line " + (k + 1));
+
+    let string = "";
+    for (let i = 1; i <= userInput; i++) {
+        string += "* ";
+    }
+
+    console.log( (k + 1) + ": " + string);
+}*/
+
+/*B
+let userInput = +prompt("Enter number");
+
+let string = "";
+for (let i = 1; i <= userInput; i++) {
+    for (let j = 1; j <= i; j++) {
+        string += "* ";
+    }
+    string += "\n";
+}
+
+console.log("\n" + string);*/
 
 
+/* C 
 
 
+let string = "";
+let userInput = +prompt("Enter number");
 
+for (let i = 0; i <= userInput; i++) {
+    string = string + "*";
 
+    if (i === userInput) {
+        console.log(string.length - 1);
+
+        for (let j = 0; j < userInput; j++) {
+            console.log(string.slice (0 , string.length-j));
+        }
+    }
+}*/
 
 
 
